@@ -137,7 +137,7 @@ app.post('/login', (req, res) => {
 
       console.log('Пользователь успешно вошел: ' + name);
       res.send('Вход успешно выполнен! Привет: ' + name);
-      res.redirect('/index.html');
+      // res.redirect('/index.html');
     } else {
       console.log('Не удалось выполнить вход: неверный логин или пароль');
       res.status(401).send('Не удалось выполнить вход: неверный логин или пароль');

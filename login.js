@@ -15,6 +15,7 @@ document.getElementById('loginForm').addEventListener('submit', function(event) 
         if (xhr.status === 200) {
           // Вход успешен
           alert(xhr.responseText);
+          window.location.href = '/index.html';
           
         } else {
           // Ошибка входа
